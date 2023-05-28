@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav section*/
+
+.button-section{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+
+}
+.navbar-brand{
+    font-family:"Bebas+Neue&display=swap";
+   color: red;
+   font-size: 50px;
+}
+.navbar-collapse{
+    
+    gap: 15px;
+    justify-content: space-between;
+
+}
+.nav-link {
+    color: black;
+    font-weight: 600;
+    
+}
+.nav-item{
+    padding: 35px;
+}
+#btn1{
+    width: 102px;
+   height: 42px;
+   margin-right: 10%;
+   
+
+}
+#btn2{
+    width: 92px;
+    
+    height: 40px;
+}
+
+/* Hero section */
+.main{
+    background: url(jobimgs/main1copy.jpg)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+@keyframes slideinleft{
+    from{
+        transform: translate(300px);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.col-7 > h1{
+    margin-top: 15%;
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: 5%;
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-delay:0s ;
+    animation-iteration-count:1;
+    animation-direction:normal ;
+    animation-timing-function: ease-in;
+
+}
+.col-7 > input{
+    margin-left: 5%;
+    height: 40px;
+    width: 35%;
+    margin-top: 3%;
+    margin-right: 3%;
+    border: none;
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-delay:0s ;
+    animation-iteration-count:1;
+    animation-direction:normal ;
+    animation-timing-function: ease-in;
+}
+#btn3{
+    width: 92px;
+    height: 40px;
+    border: none;
+    background-color:rgb(221, 52, 52);
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5%;
+    animation-name: slideinleft;
+    animation-duration: 1s;
+    animation-delay:0s ;
+    animation-iteration-count:1 ;
+    animation-direction:normal ;
+    animation-timing-function: ease-in;
+    
+}
+@media screen and (max-width:600px){
+    #btn3{
+        margin-left: 5%;
+        margin-top: 8px;
+    }
+}
+#btn3 :hover{
+    background: coral;
+    transition: all 0.3s;
+}
+
+  
+
+/*second section*/
+.container > h1{
+    font-weight: 500;
+    animation: slideinleft 1s 3;
+}
+.container > p{
+    animation: slideinleft 1s 3;
+
+}
+
+
+@keyframes animate{0%{box-shadow: 0 0 0 0 rgba(62, 45, 209, 0.7) , 0 0 0 0 rgba(70, 35, 209, 0.7)}40%{box-shadow: 0 0 0 50px rgb(255, 109, 74, 0) , 0 0 0 0 rgba(59, 31, 184, 0.7)}80%{box-shadow: 0 0 0 50px rgb(255, 109, 74, 0) , 0 0 0 30px rgb(255, 109, 74, 0)}100%{box-shadow: 0 0 0 0 rgb(255, 109, 74, 0) , 0 0 0 30px rgb(255, 109, 74, 0)}}
+
+
+.card{
+    align-items: center;
+    width: 10%;
+    height: 200px;
+    padding-top: 12%;
+    gap: 5px;
+    box-shadow: 24px 10px 23px 0px rgba(0,0,0,0.34);
+    background-color: rgb(241, 229, 214);
+    margin-bottom: 18px;
+    
+    
+}
+
+    
+
+
+.card > img{
+    width: 110px;
+    align-items: center;
+}
+#card-section{
+    margin-top: 5%;
+   
+    
+}
+#btn4{
+    width: 292px;
+    height: 60px;
+    background: rgb(45, 45, 213);
+      margin-top: 10%;
+      margin-bottom: 1%;
+    border-radius: 5px;
+    justify-content: center;
+    transition: all 0.3ms;
+    cursor: pointer;
+    color: beige;
+    border: none;
+    animation: animate 5s infinite;
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+    
+    
+
+}
+
+
+#btnalign{
+    align-items: center;
+    justify-content: center;
+}
+.reasume{
+    background: linear-gradient(rgba(4,11,75,0.179),rgba(4,26,100,0.73)),url(jobimgs/woman.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    margin-top: 1%;
+    font-weight: 800;
+   
+}
+
+.col-lg-10>h1{
+    font-size: 60px;
+    font-weight:700 ;
+}
+.upload{
+    align-items: center;
+    padding-top: 5%;
+   
+}
+.btn5{
+    width: 292px;
+    height: 60px;
+    background: transparent;
+    border-color: black;
+}
+.btn5 :hover{
+    background: white;
+    color: aqua;
+    transition: 0.3s;
+}
+#btn6{
+    width: 140px;
+    height: 50px;
+    margin-top: 8px;
+}
+
+/* Apply section*/
+
+#card2{
+    height: 300px;
+    background: transparent;
+    color: white;
+    animation: animate 5s infinite;
+}
+.apply{
+    background: url(jobimgs/cool-background.png);
+    background-size: cover;
+    color: white;
+
+}
+.carousel-item{
+    align-items: center;
+    justify-content: center;
+    margin-left: 2%;
+}
+.carousel-item > img{
+    border-radius: 50%;
+    width: 250px;
+    height: 220px;
+   
+}
+.dis{
+    font-weight: 500;
+}
+h5{
+    margin-top: 3px;
+    font-size: 25px;
+}
+#btn7{
+    width: 145px;
+    margin-top: 9px;
+}
+
+/* foooter */
+
+.footer{
+    background-color: rgb(2, 2, 41);
+    color: white;
+    margin-bottom: 5px;
+
+}
+.link{
+  
+    color: white;
+    cursor: pointer;
+}
+.input{
+    border-radius: 5px;
+    height: 35px;
+    width: 250px;
+}
+
+
+
+
+
+
